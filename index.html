@@ -13,13 +13,14 @@
 
 <tw-storydata name="NO TIME TO DIE" startnode="19" creator="Twine" creator-version="2.3.1" ifid="04C39C06-AE91-4F98-83A8-FA022C6D72D7" zoom="1" format="Harlowe" format-version="3.0.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 tw-story[tags~="snow"] {
- background-image:url("https://cdn1.photostockeditor.com/c/1301/shop-gray-and-red-telephone-post-on-street-window%20display-window%20display-image.jpg");
+ background-image:url("");
  background-size:cover; }
 
 
 tw-story[tags~="start"] {
- background-image:url("https://images.unsplash.com/photo-1514395629347-41e19e338c6a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+ background-image:url("file:///Users/isabellabattersby/Desktop/Digital%20Writing%202021/Main%20Project/images/die.png");
  background-size:cover; }
+
 
 .enchantment-link:hover, tw-link:hover { color:red; }
 
@@ -29,8 +30,31 @@ tw-link { color:white; }
 tw-passage[tags~="snow"] { text-align: right; }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo&family=Bangers&family=Creepster&family=Oswald&display=swap');
+
+tw-story {
+ background-image:url("https://cdn1.photostockeditor.com/c/1301/shop-gray-and-red-telephone-post-on-street-window%20display-window%20display-image.jpg");
+ background-size:cover;
+ font-family: 'Bangers', serif;
+}
+tw-link {
+  color: white;
+}
+tw-link:focus, tw-link:hover, tw-link:active {
+  color: red;
+}
+body[data-tags~="start"] {
+  background-image: url("images/die.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+
+
+
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -96,7 +120,9 @@ You get hit by a tram and die instantly. You know trams are like rhino&#39;s on 
 
 Try again. Must have been the //wrong// music choice. 
 
-[[BEGIN]] </tw-passagedata><tw-passagedata pid="19" name="start" tags="start" position="536,117" size="100,100">[[TRY NOT TO DIE-&gt;NO TIME TO DIE]] </tw-passagedata></tw-storydata>
+[[BEGIN]] </tw-passagedata><tw-passagedata pid="19" name="start" tags="start" position="536,117" size="100,100">[[TRY NOT TO DIE-&gt;NO TIME TO DIE]] 
+
+</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
